@@ -1,12 +1,7 @@
 shinyBootstrap2::withBootstrap2({
 
-# Define server logic for random distribution application
-shinyServer(function(input, output) {
+function(input, output) {
   
-  # Reactive expression to generate the requested distribution.
-  # This is called whenever the inputs change. The output
-  # functions defined below then all use the value computed from
-  # this expression
   data <- reactive({
     dist <- switch(input$dist,
                    norm = rnorm,
@@ -18,11 +13,6 @@ shinyServer(function(input, output) {
     dist(input$n)
   })
   
-  # Generate a plot of the data. Also uses the inputs to build
-  # the plot label. Note that the dependencies on both the inputs
-  # and the data reactive expression are both tracked, and
-  # all expressions are called in the sequence implied by the
-  # dependency graph
   output$plot <- renderPlot({
     dist <- input$dist
     n <- input$n
@@ -41,6 +31,7 @@ shinyServer(function(input, output) {
     data.frame(x=data())
   })
   
-})
+}
+
 
 })
