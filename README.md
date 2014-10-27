@@ -1,13 +1,13 @@
 Demo package for shinyBootstrap2
 ================================
 
-The purpose of this package is to demonstrate how to use the the shinyBootstrap2 package.
+The purpose of this package is to demonstrate how to use the the [shinyBootstrap2](https://github.com/rstudio/shinyBootstrap2) package.
 
 
 ## Quick start
 
 ```R
-# Install Bootstrap 3 branch of Shiny
+# Install Bootstrap 3 branch of Shiny (not yet merged into master)
 devtools::install_github('rstudio/shiny@feature/bootstrap3')
 
 devtools::install_github('rstudio/shinyBootstrap2')
@@ -32,7 +32,6 @@ shinyApp(
     output$plot <- renderPlot( plot(head(cars, input$n)) )
   }
 )
-
 ```
 
 
