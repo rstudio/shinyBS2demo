@@ -1,5 +1,3 @@
-library(shiny)
-
 shinyBootstrap2::withBootstrap2({
 
 # Define UI for random distribution application 

@@ -1,4 +1,4 @@
-library(shiny)
+shinyBootstrap2::withBootstrap2({
 
 # Define server logic for random distribution application
 shinyServer(function(input, output) {
@@ -41,4 +41,6 @@ shinyServer(function(input, output) {
     data.frame(x=data())
   })
   
+})
+
 })

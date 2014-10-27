@@ -1,5 +1,3 @@
-library(shiny)
-
 # Define UI for random distribution application 
 shinyUI(fluidPage(
     
