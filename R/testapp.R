@@ -6,7 +6,7 @@ NULL
 #' In this example app, functions from the shinyBootstrap2 package will override
 #' those from shiny.
 #' @export
-testApp2 <- function() {
+bs2App <- function() {
   shinyBootstrap2::withBootstrap2({
     shinyApp(
       ui = fluidPage(
@@ -25,7 +25,7 @@ testApp2 <- function() {
 #' In this example app, functions from the shiny package will be used;
 #' shinyBootstrap2 won't be used at all.
 #' @export
-testApp3 <- function() {
+bs3App <- function() {
   shinyApp(
     ui = fluidPage(
       numericInput("n", "n", 1),

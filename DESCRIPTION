@@ -1,8 +1,8 @@
-Package: testbs2
-Title: What the package does (one line)
+Package: bs2demo
+Title: Demonstration of shinyBootstrap2 usage
 Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (one paragraph)
+Authors@R: "Winston Chang <winston@rstudio.com> [aut, cre]"
+Description: Demonstration of shinyBootstrap2 usage.
 Depends:
     R (>= 3.0)
 Imports:
