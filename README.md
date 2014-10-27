@@ -96,14 +96,16 @@ A user of this test package would run it with:
 
 ```R
 library(bs2demo)
-bs2App()
+bs2appObj()
 ```
 
 You can contrast it to the `testApp3()` function, which doesn't have `withBootstrap2()` and therefore uses the default Bootstrap 3 components from Shiny:
 
 ```R
-bs3App()
+bs3appObj()
 ```
+
+You can view the code for these functions at https://github.com/wch/bs2demo/blob/master/R/demo.R.
 
 
 ### Shiny application files
@@ -118,6 +120,8 @@ runApp(system.file('bs2app', package='bs2demo'))
 # Uses Bootstrap 3 components from shiny
 runApp(system.file('bs3app', package='bs2demo'))
 ```
+
+You can view the code for these functions at You can view the code at https://github.com/wch/bs2demo/tree/master/inst/bs2app and https://github.com/wch/bs2demo/tree/master/inst/bs3app.
 
 To create an app in inst/ like this, the code in ui.R would be wrapped in `withBootstrap2()`:
 
