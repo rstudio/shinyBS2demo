@@ -6,6 +6,7 @@ Description: What the package does (one paragraph)
 Depends:
     R (>= 3.0)
 Imports:
-    shiny
+    shiny,
+    shinyBootstrap2
 License: MIT
 LazyData: true
