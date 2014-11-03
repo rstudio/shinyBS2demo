@@ -1,8 +1,8 @@
-Package: bs2demo
+Package: shinyBS2demo
 Title: Demonstration of shinyBootstrap2 usage
 Version: 0.1
 Authors@R: "Winston Chang <winston@rstudio.com> [aut, cre]"
-Description: Demonstration of shinyBootstrap2 usage.
+Description: This package demonstrates how to use shinyBootstrap2 in a package.
 Depends:
     R (>= 3.0)
 Imports:
