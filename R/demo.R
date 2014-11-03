@@ -10,11 +10,13 @@ bs2appObj <- function() {
   shinyBootstrap2::withBootstrap2({
     shinyApp(
       ui = fluidPage(
-        numericInput("n", "n", 1),
-        plotOutput("plot")
+        sidebarPanel(selectInput("n", "n", c(1, 5, 10))),
+        mainPanel(plotOutput("plot"))
       ),
       server = function(input, output) {
-        output$plot <- renderPlot( plot(head(cars, input$n)) )
+        output$plot <- renderPlot({
+          plot(head(cars, as.numeric(input$n)))
+        })
       }
     )
   })
@@ -28,11 +30,13 @@ bs2appObj <- function() {
 bs3appObj <- function() {
   shinyApp(
     ui = fluidPage(
-      numericInput("n", "n", 1),
-      plotOutput("plot")
+      sidebarPanel(selectInput("n", "n", c(1, 5, 10))),
+      mainPanel(plotOutput("plot"))
     ),
     server = function(input, output) {
-      output$plot <- renderPlot( plot(head(cars, input$n)) )
+      output$plot <- renderPlot({
+        plot(head(cars, as.numeric(input$n)))
+      })
     }
   )
 }
