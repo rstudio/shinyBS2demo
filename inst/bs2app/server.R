@@ -1,4 +1,4 @@
-shinyBootstrap2::withBootstrap2({
+shinybootstrap2::withBootstrap2({
 
 function(input, output) {
   

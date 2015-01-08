@@ -3,11 +3,11 @@ NULL
 
 #' A test application that uses Bootstrap 2
 #'
-#' In this example app, functions from the shinyBootstrap2 package will override
+#' In this example app, functions from the shinybootstrap2 package will override
 #' those from shiny.
 #' @export
 bs2appObj <- function() {
-  shinyBootstrap2::withBootstrap2({
+  shinybootstrap2::withBootstrap2({
     shinyApp(
       ui = fluidPage(
         sidebarPanel(selectInput("n", "n", c(1, 5, 10))),
@@ -25,7 +25,7 @@ bs2appObj <- function() {
 #' A test application that uses Bootstrap 3
 #'
 #' In this example app, functions from the shiny package will be used;
-#' shinyBootstrap2 won't be used at all.
+#' shinybootstrap2 won't be used at all.
 #' @export
 bs3appObj <- function() {
   shinyApp(

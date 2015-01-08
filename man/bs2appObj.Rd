@@ -6,7 +6,7 @@
 bs2appObj()
 }
 \description{
-In this example app, functions from the shinyBootstrap2 package will override
+In this example app, functions from the shinybootstrap2 package will override
 those from shiny.
 }
 

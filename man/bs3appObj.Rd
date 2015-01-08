@@ -7,6 +7,6 @@ bs3appObj()
 }
 \description{
 In this example app, functions from the shiny package will be used;
-shinyBootstrap2 won't be used at all.
+shinybootstrap2 won't be used at all.
 }
 
